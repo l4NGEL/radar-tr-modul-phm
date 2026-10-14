@@ -1,0 +1,48 @@
+{
+  "yanlis_alarm_siniflandirici": {
+    "test_olay_sayisi": 51,
+    "gercek_ariza_olay_sayisi": 16,
+    "yanlis_alarm_olay_sayisi": 35,
+    "f1_gercek_ariza": 0.5455,
+    "f1_yanlis_alarm": 0.875,
+    "yanlis_alarm_bastirma_orani": 1.0
+  },
+  "kestirimci_bakim_rul": {
+    "degerlendirilen_modul_sayisi": 4,
+    "ortalama_mutlak_hata_ornek": 4.7,
+    "modul_detaylari": [
+      {
+        "modul_id": 22,
+        "ariza_modu": "PA_Bozulmasi",
+        "gozlem_ani": 248.0,
+        "tahmini_rul_ornek": 39.1,
+        "gercek_rul_ornek": 45.0,
+        "mutlak_hata_ornek": 5.9
+      },
+      {
+        "modul_id": 23,
+        "ariza_modu": "PA_Bozulmasi",
+        "gozlem_ani": 215.0,
+        "tahmini_rul_ornek": 45.3,
+        "gercek_rul_ornek": 45.0,
+        "mutlak_hata_ornek": 0.3
+      },
+      {
+        "modul_id": 27,
+        "ariza_modu": "Termal_Ariza",
+        "gozlem_ani": 257.0,
+        "tahmini_rul_ornek": 47.8,
+        "gercek_rul_ornek": 36.0,
+        "mutlak_hata_ornek": 11.8
+      },
+      {
+        "modul_id": 31,
+        "ariza_modu": "Osilator_Kaymasi",
+        "gozlem_ani": 285.0,
+        "tahmini_rul_ornek": 54.8,
+        "gercek_rul_ornek": 54.0,
+        "mutlak_hata_ornek": 0.8
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.10" }
+      - run: pip install -r requirements.txt pytest
+      - run: |
+          python 00_tr_modul_simulasyonu.py
+          python 01_ariza_tespit_teshis.py
+          python 02_yanlis_alarm_kestirimci_bakim.py
+          python 03_metrikler_ve_fmea.py
+      - run: python -m pytest -q test_dashboard_mantigi.py
+      - name: Committed results match a fresh run
+        run: git diff --exit-code -- sonuclar/

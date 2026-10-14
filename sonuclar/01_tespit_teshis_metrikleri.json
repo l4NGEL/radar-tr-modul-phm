@@ -1,0 +1,59 @@
+{
+  "kural_tabanli": {
+    "fault_detection_coverage": 0.9147,
+    "false_alarm_rate": 0.0123,
+    "gecici_blip_yakalama_orani": 0.8182,
+    "mean_time_to_detect_ornek": 14.17,
+    "kacirilan_arizali_modul_sayisi": 0
+  },
+  "isolation_forest": {
+    "fault_detection_coverage": 0.8634,
+    "false_alarm_rate": 0.0764,
+    "gecici_blip_yakalama_orani": 0.3636,
+    "mean_time_to_detect_ornek": 7.33,
+    "kacirilan_arizali_modul_sayisi": 0
+  },
+  "random_forest": {
+    "fault_detection_coverage": 0.9335,
+    "false_alarm_rate": 0.0088,
+    "gecici_blip_yakalama_orani": 0.9091,
+    "mean_time_to_detect_ornek": 12.33,
+    "kacirilan_arizali_modul_sayisi": 0
+  },
+  "teshis_lokalizasyon": {
+    "fault_isolation_accuracy": 0.9682,
+    "test_ariza_ornegi_sayisi": 1384,
+    "siniflar": [
+      "Konnektor_Arizasi",
+      "Osilator_Kaymasi",
+      "PA_Bozulmasi",
+      "Termal_Ariza"
+    ],
+    "confusion_matrix": [
+      [
+        429,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        211,
+        0,
+        12
+      ],
+      [
+        0,
+        12,
+        496,
+        9
+      ],
+      [
+        0,
+        11,
+        0,
+        204
+      ]
+    ]
+  }
+}
